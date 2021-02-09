@@ -1,38 +1,77 @@
+body {
+  --twitter-color: #50b7f5;
+  --twitter-background: #14202b;
+  --hover-link-background: rgba(29, 161, 242, 0.1);
+}
+
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 100vh;
+  margin: 0 auto;
+  border: 2px solid yellow;
+  max-width: 1300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Side Bar */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.side-bar {
   display: flex;
   flex-direction: column;
+  border: 2px solid red;
+  padding: 0.5em;
+}
+
+.twitter-logo {
+  border: 2px solid yellow;
+  padding-left: 1.3em;
+  margin-bottom: 15px;
+}
+
+.sidebar-link {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-decoration: none;
+  padding-left: 0.7em;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  border: 2px solid yellow;
+  font-weight: 700;
+  width: 70%;
 }
 
-.App-link {
-  color: #61dafb;
+.side-bar-btn {
+  background: #1da1f3;
+  padding: 0.8em 1.4em;
+  border: none;
+  border-radius: 25px;
+  width: 230px;
+  font-weight: 700;
+  font-size: 1.1em;
+  transition: 0.2s;
+}
+.side-bar-btn:hover {
+  background: #188ad1;
+}
+.profile-widget-btn {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-top: auto;
+  align-self: flex-start;
+  border: none;
+  padding: 0.5em;
+  border-radius: 25px;
+  border: 2px solid yellow;
+  text-decoration: none;
+}
+.profile-widget-btn > * {
+  font-size: 1rem;
+}
+.profile-widget-btn p:first-of-type {
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-widget-btn:hover {
+  background: var(--hover-link-background);
 }
