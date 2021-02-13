@@ -59,11 +59,11 @@ function SideBar() {
       <a href="#" className="profile-widget-btn">
         <Avatar
           alt="stock photo"
-          src="./img/heyphotoshoot-Rv1_qkmO4C4-unsplash.jpg"
+          src="/imgs/sampleAvi.jpg"
           style={{ marginRight: ".3em" }}
         />
         <div>
-          <p>
+          <p className="user-handle">
             User_Handle <LockIcon style={{ fontSize: "20px" }} />
           </p>
           <p>Username</p>
