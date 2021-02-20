@@ -3,7 +3,7 @@ import TweetPost from "./TweetPost";
 
 const TweetFeed = () => {
   return (
-    <div className="tweet-feed">
+    <div>
       <TweetPost />
     </div>
   );

@@ -7,7 +7,7 @@ import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
-import WhatshotIcon from "@material-ui/icons/Whatshot";
+import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import Avatar from "@material-ui/core/Avatar";
 import LockIcon from "@material-ui/icons/Lock";
 
@@ -15,6 +15,8 @@ function SideBar() {
   let iconStyling = {
     marginRight: ".5em ",
     fontSize: "2rem",
+    backgroundColor: "transparent",
+    color: "none",
   };
 
   return (
@@ -23,52 +25,52 @@ function SideBar() {
         <TwitterIcon style={{ fill: "#fff", fontSize: "2rem" }} />
       </div>
 
-      <a href="#" className="sidebar-link">
+      <button className="sidebar-link">
         <HomeIcon style={iconStyling} /> Home
-      </a>
-      <a href="#" className="sidebar-link">
-        <WhatshotIcon style={iconStyling} />
+      </button>
+      <button className="sidebar-link">
+        <SearchOutlinedIcon style={iconStyling} />
         Explore
-      </a>
-      <a href="#" className="sidebar-link">
+      </button>
+      <button className="sidebar-link">
         <NotificationsNoneIcon style={iconStyling} />
         Notifications
-      </a>
-      <a href="#" className="sidebar-link">
+      </button>
+      <button className="sidebar-link">
         <MailOutlineIcon style={iconStyling} />
         Messages
-      </a>
-      <a href="#" className="sidebar-link">
+      </button>
+      <button className="sidebar-link">
         <BookmarkBorderIcon style={iconStyling} />
         Bookmarks
-      </a>
-      <a href="#" className="sidebar-link">
+      </button>
+      <button className="sidebar-link">
         <ListAltIcon style={iconStyling} />
         Lists
-      </a>
-      <a href="#" className="sidebar-link">
+      </button>
+      <button className="sidebar-link">
         <PersonOutlineIcon style={iconStyling} />
         Profile
-      </a>
-      <a href="#" className="sidebar-link">
+      </button>
+      <button className="sidebar-link">
         <MoreHorizIcon style={iconStyling} />
         More
-      </a>
-      <button className="side-bar-btn">Tweet</button>
+      </button>
+      <button className="side-bar-btn btn">Tweet</button>
 
-      <a href="#" className="profile-widget-btn">
+      <button className="profile-widget-btn btn">
         <Avatar
           alt="stock photo"
           src="/imgs/sampleAvi.jpg"
-          style={{ marginRight: ".3em" }}
+          style={{ marginRight: ".3em", background: "transparent" }}
         />
         <div>
           <p className="user-handle">
             User_Handle <LockIcon style={{ fontSize: "20px" }} />
           </p>
-          <p>Username</p>
+          <p>@Username</p>
         </div>
-      </a>
+      </button>
     </div>
   );
 }

@@ -2,6 +2,7 @@
   --twitter-color: #50b7f5;
   --twitter-background: #14202b;
   --hover-highlight-background: rgba(29, 161, 242, 0.1);
+  --accent-border: rgba(29, 160, 242, 0.19);
   --fontsize-large: 20px;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
@@ -9,11 +10,15 @@
 
 .App {
   display: grid;
-  grid-template-columns: 300px auto 300px;
+  grid-template-columns: 275px auto 400px;
   height: 100vh;
   margin: 0 auto;
   border: 2px solid yellow;
   max-width: 1300px;
+}
+
+.btn {
+  cursor: pointer;
 }
 
 /*------------
@@ -25,7 +30,6 @@
 .side-bar {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
   padding: 0.5em;
 }
 
@@ -34,21 +38,25 @@
   padding-left: 1em;
   margin-bottom: 15px;
 }
+.twitter-logo:hover {
+  background: var(--hover-highlight-background);
+}
 
 .sidebar-link {
   display: flex;
   align-items: center;
-  text-decoration: none;
   padding: 0.2em 0.7em;
-  margin-bottom: 1em;
+  margin-bottom: 0.9em;
   font-size: var(--fontsize-large);
   font-weight: var(--font-weight-bold);
   width: fit-content;
   border-radius: 25px;
+  border: none;
 }
 .sidebar-link:hover {
-  background: var(--hover-highlight-background) !important;
+  background: var(--hover-highlight-background);
   color: #188ad1;
+  cursor: pointer;
 }
 
 .side-bar-btn {
@@ -74,8 +82,8 @@
   border: none;
   padding: 0.5em;
   border-radius: 25px;
-  border: 2px solid yellow;
   text-decoration: none;
+  background: transparent;
 }
 .profile-widget-btn > * {
   font-size: 1rem;
@@ -101,8 +109,8 @@
 .main-feed {
   display: flex;
   flex-direction: column;
-  border: 2px solid purple;
-  width: 575px;
+  width: 620px;
+  border: 1px solid var(--accent-border);
 }
 
 /*------------
@@ -113,20 +121,38 @@
 
 .tweet-form-container {
   width: 100%;
-  border: 2px solid red;
+  border-bottom: 1px solid var(--hover-highlight-background);
 }
 
-.tweet-form-container a {
+.tweet-form-container::after {
+  content: "";
+  display: block;
+  border-bottom: 7px solid var(--accent-border);
+}
+
+.home-link {
   display: block;
   font-size: var(--fontsize-large);
   font-weight: var(--font-weight-bold);
-  text-decoration: none;
-  padding: 0.5em 0.5em;
+  padding: 0.5em;
   width: 100%;
+  border-bottom: 1px solid var(--accent-border);
+  text-align: left;
 }
 
-form {
+.form-avatar {
+  margin: 0.5em;
+}
+
+.form-content {
   display: flex;
+  padding: 0.5em;
+  border: 2px solid orange;
+}
+form {
+  border: 2px solid blue;
+  width: 100%;
+  margin-top: 1em;
 }
 
 .tweet-form-container input {
@@ -134,11 +160,25 @@ form {
   border: none;
   outline: none;
   font-size: var(--fontsize-large);
+  font-weight: 400;
 }
 
 .tweet-form-toolbar {
   display: flex;
   border: 2px solid yellow;
+  padding-top: 1.5em;
+}
+
+.tweet-form-toolbar-media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid orange;
+  width: 50%;
+}
+
+.toolbar-media-btn {
+  margin-right: 0.5em;
 }
 
 .tweet-form-btn {
@@ -164,32 +204,75 @@ form {
 ------------ */
 .tweet-post-container {
   display: flex;
-  border: 2px solid yellow;
   min-height: fit-content;
-  padding: 0.5em 0.5em;
-}
-
-.tweet-post-container :hover,
-.tweet-post-container :hover * {
-  background: var(--hover-highlight-background);
+  padding: 0.8em;
+  border-top: 1px solid var(--accent-border);
+  border-bottom: 1px solid var(--accent-border);
 }
 
 .tweet-post-container .tweet-post-title p {
   font-weight: var(--font-weight-bold);
 }
+
+.tweet-avatar {
+  margin: 0.5em;
+}
+
 .tweet-post-title {
   display: flex;
+  padding: 0.3em 0;
+}
+.tweet-post-handle {
+  font-weight: lighter;
+  color: #7f8f9b;
+  margin-left: 0.3em;
+}
+
+.tweet-verified-badge {
+  font-size: 14px !important;
+  margin-left: 0.2em;
 }
 
 .tweet-img {
   width: 100%;
   background-size: cover;
   border-radius: 25px;
-  padding: 0.5em;
+  border: 1px solid rgb(95, 95, 95);
+  margin: 0.5em 0;
 }
 
 .tweet-post-content {
   width: 100%;
   word-wrap: break-word;
   overflow: hidden;
+}
+
+.tweet-post-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*------------
+---------------
+   Widgets
+--------------
+------------ */
+.widgets-container {
+  border: 2px solid orange;
+}
+.widgets-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.twitter-embed-container {
+  width: 80%;
+}
+
+.widgets {
+  flex: 0.3;
 }
