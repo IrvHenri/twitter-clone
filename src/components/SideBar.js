@@ -1,4 +1,5 @@
 import React from "react";
+
 import TwitterIcon from "@material-ui/icons/Twitter";
 import HomeIcon from "@material-ui/icons/Home";
 import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
@@ -16,7 +17,6 @@ function SideBar() {
     marginRight: ".5em ",
     fontSize: "2rem",
     backgroundColor: "transparent",
-    color: "none",
   };
 
   return (

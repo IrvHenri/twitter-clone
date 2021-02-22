@@ -3,7 +3,6 @@ import Avatar from "@material-ui/core/Avatar";
 import TweetPost from "./TweetPost";
 import PermMediaOutlinedIcon from "@material-ui/icons/PermMediaOutlined";
 import GifOutlinedIcon from "@material-ui/icons/GifOutlined";
-import SentimentSatisfiedOutlinedIcon from "@material-ui/icons/SentimentSatisfiedOutlined";
 function TweetForm() {
   const [tweetMessage, setTweetMessage] = useState("");
   const [tweets, setTweets] = useState([]);
@@ -12,6 +11,7 @@ function TweetForm() {
     event.preventDefault();
     setTweets((prevTweets) => [...prevTweets, tweetMessage]);
     console.log(tweets);
+    setTweetMessage("");
   }
 
   const tweetFeed = tweets.map((tweet, index) => (
@@ -32,17 +32,22 @@ function TweetForm() {
             <input
               type="text"
               name="tweetMessage"
+              autoComplete="off"
               placeholder="What's happening?"
               value={tweetMessage}
               onChange={(e) => setTweetMessage(e.target.value)}
             />
-            <div className="tweet-form-toolbar">
-              <div className="tweet-form-toolbar-media">
-                <PermMediaOutlinedIcon className="toolbar-media-btn" />
-                <GifOutlinedIcon className="toolbar-media-btn" />
 
-                <SentimentSatisfiedOutlinedIcon className="toolbar-media-btn" />
-              </div>
+            <div className="tweet-form-toolbar">
+              <input
+                type="text"
+                name="tweetMessage"
+                autoComplete="off"
+                placeholder="Enter image URL"
+                value={tweetMessage}
+                onChange={(e) => setTweetMessage(e.target.value)}
+              />
+
               <button className="tweet-form-btn btn" type="submit">
                 Tweet
               </button>

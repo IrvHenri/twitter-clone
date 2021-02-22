@@ -6,7 +6,7 @@ const Widgets = () => {
   return (
     <div className="widgets-container">
       <div className="widgets-input">
-        <SearchOutlinedIcon className="widgets-search-icon" />
+        <SearchOutlinedIcon className="widgets-search-icon" color="blue" />
         <input placeholder="Search Twitter" type="text" />
       </div>
       <div className="twitter-embed-container">
