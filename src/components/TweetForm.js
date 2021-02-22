@@ -1,17 +1,22 @@
 import React, { useState } from "react";
 import Avatar from "@material-ui/core/Avatar";
 import TweetPost from "./TweetPost";
-import PermMediaOutlinedIcon from "@material-ui/icons/PermMediaOutlined";
-import GifOutlinedIcon from "@material-ui/icons/GifOutlined";
+
 function TweetForm() {
   const [tweetMessage, setTweetMessage] = useState("");
   const [tweets, setTweets] = useState([]);
+  const [imageUrl, setImageUrl] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    setTweets((prevTweets) => [...prevTweets, tweetMessage]);
-    console.log(tweets);
+
+    setTweets((prevTweets) => [
+      ...prevTweets,
+      { tweet: tweetMessage, imageUrl: imageUrl },
+    ]);
     setTweetMessage("");
+    setImageUrl("");
+    console.log(tweets);
   }
 
   const tweetFeed = tweets.map((tweet, index) => (
@@ -35,20 +40,25 @@ function TweetForm() {
               autoComplete="off"
               placeholder="What's happening?"
               value={tweetMessage}
+              required
               onChange={(e) => setTweetMessage(e.target.value)}
             />
 
             <div className="tweet-form-toolbar">
               <input
                 type="text"
-                name="tweetMessage"
+                name="imageUrl"
                 autoComplete="off"
                 placeholder="Enter image URL"
-                value={tweetMessage}
-                onChange={(e) => setTweetMessage(e.target.value)}
+                value={imageUrl}
+                onChange={(e) => setImageUrl(e.target.value)}
               />
 
-              <button className="tweet-form-btn btn" type="submit">
+              <button
+                disabled={!tweetMessage}
+                className="tweet-form-btn btn"
+                type="submit"
+              >
                 Tweet
               </button>
             </div>

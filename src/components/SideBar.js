@@ -22,7 +22,10 @@ function SideBar() {
   return (
     <div className="side-bar">
       <div className="twitter-logo">
-        <TwitterIcon style={{ fill: "#fff", fontSize: "2rem" }} />
+        <TwitterIcon
+          style={{ fill: "#fff", fontSize: "2rem" }}
+          className="twitter-icon"
+        />
       </div>
 
       <button className="sidebar-link">

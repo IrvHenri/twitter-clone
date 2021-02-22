@@ -1,9 +1,9 @@
 import React from "react";
 
-const TweetImg = () => {
+const TweetImg = ({ imageUrl }) => {
   return (
-    <div>
-      <img src={"/imgs/sample.jpg"} alt="sample" className="tweet-img" />
+    <div className="tweet-img-container">
+      <img src={imageUrl} alt="sample" className="tweet-img" />
     </div>
   );
 };
