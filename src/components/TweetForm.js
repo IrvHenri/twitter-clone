@@ -3,19 +3,25 @@ import Avatar from "@material-ui/core/Avatar";
 import TweetPost from "./TweetPost";
 
 function TweetForm() {
-  const [tweetMessage, setTweetMessage] = useState("");
+  const [tweetPost, setTweetPost] = useState({
+    tweetMessage: "",
+    imageUrl: "",
+  });
   const [tweets, setTweets] = useState([]);
-  const [imageUrl, setImageUrl] = useState("");
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setTweetPost((prevTweetPost) => ({ ...prevTweetPost, [name]: value }));
+  }
 
   function handleSubmit(event) {
     event.preventDefault();
 
-    setTweets((prevTweets) => [
-      ...prevTweets,
-      { tweet: tweetMessage, imageUrl: imageUrl },
-    ]);
-    setTweetMessage("");
-    setImageUrl("");
+    setTweets((prevTweets) => [...prevTweets, tweetPost]);
+    setTweetPost({
+      tweetMessage: "",
+      imageUrl: "",
+    });
     console.log(tweets);
   }
 
@@ -39,9 +45,9 @@ function TweetForm() {
               name="tweetMessage"
               autoComplete="off"
               placeholder="What's happening?"
-              value={tweetMessage}
+              value={tweetPost.tweetMessage}
               required
-              onChange={(e) => setTweetMessage(e.target.value)}
+              onChange={handleChange}
             />
 
             <div className="tweet-form-toolbar">
@@ -50,12 +56,12 @@ function TweetForm() {
                 name="imageUrl"
                 autoComplete="off"
                 placeholder="Enter image URL"
-                value={imageUrl}
-                onChange={(e) => setImageUrl(e.target.value)}
+                value={tweetPost.imageUrl}
+                onChange={handleChange}
               />
 
               <button
-                disabled={!tweetMessage}
+                disabled={!tweetPost.tweetMessage}
                 className="tweet-form-btn btn"
                 type="submit"
               >

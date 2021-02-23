@@ -23,11 +23,11 @@ function TweetPost({ tweet }) {
           </p>
           <span className="tweet-post-handle">@username</span>
         </div>
-        <p className="tweet-message">{tweet.tweet}</p>
+        <p className="tweet-message">{tweet.tweetMessage}</p>
         {tweet.imageUrl ? <TweetImg imageUrl={tweet.imageUrl} /> : null}
 
         <div className="tweet-post-toolbar">
-          <ChatBubbleOutlineOutlinedIcon color="blue" />
+          <ChatBubbleOutlineOutlinedIcon />
           <RepeatOutlinedIcon />
           <FavoriteBorderOutlinedIcon />
           <PublishOutlinedIcon />
