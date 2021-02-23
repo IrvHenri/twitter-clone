@@ -362,12 +362,11 @@ form {
   box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.302),
     0 4px 8px 3px rgba(60, 64, 67, 0.149);
   position: absolute;
-  top: 10%;
+  top: 16%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -50%);
   background-color: var(--twitter-background);
   width: 40%;
-  border-radius: 25px;
   border: 2px solid yellow;
 }
 
@@ -375,7 +374,36 @@ form {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.2s 0s, transform 0.2s;
+}
+
+.modal-header {
+  padding: 1em;
+  border-bottom: 1px solid var(--accent-border);
+}
+
+.close-icon * {
+  color: var(--twitter-color);
+}
+.close-icon:hover {
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  padding-bottom: 0;
+}
+
+.modal-avatar {
+  align-self: flex-start;
+}
+
+.modal-fields {
+  padding: 0.5em;
+  width: 100%;
+  border-bottom: 1px solid var(--accent-border);
 }
 
 .modal-content input {
@@ -384,6 +412,11 @@ form {
   outline: none;
   font-size: var(--fontsize-large);
   font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.modal-footer {
+  padding: 0.5em;
 }
 
 .modal-content button {

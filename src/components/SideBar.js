@@ -12,7 +12,7 @@ import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import Avatar from "@material-ui/core/Avatar";
 import LockIcon from "@material-ui/icons/Lock";
 
-function SideBar() {
+function SideBar({ isModalOpen, setIsModalOpen }) {
   let iconStyling = {
     marginRight: ".5em ",
     fontSize: "2rem",
@@ -59,7 +59,12 @@ function SideBar() {
         <MoreHorizIcon style={iconStyling} />
         More
       </button>
-      <button className="side-bar-btn btn">Tweet</button>
+      <button
+        onClick={(e) => setIsModalOpen((prevState) => !prevState)}
+        className="side-bar-btn btn"
+      >
+        Tweet
+      </button>
 
       <button className="profile-widget-btn btn">
         <Avatar
