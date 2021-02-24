@@ -6,11 +6,10 @@ import Widgets from "./components/Widgets";
 import Modal from "./components/Modal";
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="App">
-      <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
-      <SideBar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+      <Modal />
+      <SideBar />
       <MainFeed />
       <Widgets />
     </div>

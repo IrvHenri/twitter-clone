@@ -12,7 +12,7 @@ function TweetPost({ tweet }) {
     <div className="tweet-post-container">
       <Avatar
         alt="stock photo"
-        src="/imgs/sampleAvi.jpg"
+        src="https://images.unsplash.com/photo-1457449940276-e8deed18bfff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
         className="tweet-avatar"
       />
       <div className="tweet-post-content">

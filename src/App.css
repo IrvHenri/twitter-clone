@@ -251,7 +251,7 @@ form {
 }
 
 .tweet-message {
-  padding: 0.5em 0;
+  padding: 0.7em 0;
 }
 
 .tweet-img {
@@ -367,7 +367,6 @@ form {
   transform: translate(-50%, -50%);
   background-color: var(--twitter-background);
   width: 40%;
-  border: 2px solid yellow;
 }
 
 .open-modal {

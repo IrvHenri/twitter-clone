@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { ModalContext } from "../ModalContext";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import HomeIcon from "@material-ui/icons/Home";
 import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
@@ -12,7 +12,8 @@ import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import Avatar from "@material-ui/core/Avatar";
 import LockIcon from "@material-ui/icons/Lock";
 
-function SideBar({ isModalOpen, setIsModalOpen }) {
+function SideBar(props) {
+  const { openModal } = useContext(ModalContext);
   let iconStyling = {
     marginRight: ".5em ",
     fontSize: "2rem",
@@ -59,17 +60,14 @@ function SideBar({ isModalOpen, setIsModalOpen }) {
         <MoreHorizIcon style={iconStyling} />
         More
       </button>
-      <button
-        onClick={(e) => setIsModalOpen((prevState) => !prevState)}
-        className="side-bar-btn btn"
-      >
+      <button onClick={openModal} className="side-bar-btn btn">
         Tweet
       </button>
 
       <button className="profile-widget-btn btn">
         <Avatar
           alt="stock photo"
-          src="/imgs/sampleAvi.jpg"
+          src="https://images.unsplash.com/photo-1457449940276-e8deed18bfff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
           style={{ marginRight: ".3em", background: "transparent" }}
         />
         <div>
