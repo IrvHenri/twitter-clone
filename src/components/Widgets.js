@@ -31,7 +31,7 @@ const Widgets = () => {
         <small>Cookie Policy</small>
         <small>Ads Info</small>
         <small>More...</small>
-        <small>2021 &copy Twitter-clone, Inc.</small>
+        <small>2021 © Twitter-Clone by Irving Henriquez</small>
       </div>
     </div>
   );

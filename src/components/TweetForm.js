@@ -1,29 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { FormContext } from "../FormContext";
 import Avatar from "@material-ui/core/Avatar";
 import TweetPost from "./TweetPost";
 
 function TweetForm() {
-  const [tweetPost, setTweetPost] = useState({
-    tweetMessage: "",
-    imageUrl: "",
-  });
-  const [tweets, setTweets] = useState([]);
-
-  function handleChange(event) {
-    const { name, value } = event.target;
-    setTweetPost((prevTweetPost) => ({ ...prevTweetPost, [name]: value }));
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-
-    setTweets((prevTweets) => [...prevTweets, tweetPost]);
-    setTweetPost({
-      tweetMessage: "",
-      imageUrl: "",
-    });
-    console.log(tweets);
-  }
+  const { tweets, handleSubmit, handleChange, tweetPost } = useContext(
+    FormContext
+  );
 
   const tweetFeed = tweets.map((tweet, index) => (
     <TweetPost key={index} tweet={tweet} />

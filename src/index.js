@@ -3,13 +3,16 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { ModalContextProvider } from "./ModalContext";
+import { FormContextProvider } from "./FormContext";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ModalContextProvider>
-      <App />
-    </ModalContextProvider>
+    <FormContextProvider>
+      <ModalContextProvider>
+        <App />
+      </ModalContextProvider>
+    </FormContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
