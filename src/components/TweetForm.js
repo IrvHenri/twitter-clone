@@ -1,4 +1,6 @@
+import "../style/tweetForm.css";
 import React, { useContext } from "react";
+
 import { FormContext } from "../FormContext";
 import Avatar from "@material-ui/core/Avatar";
 import TweetPost from "./TweetPost";
@@ -29,7 +31,6 @@ function TweetForm() {
               autoComplete="off"
               placeholder="What's happening?"
               value={tweetPost.tweetMessage}
-              required
               onChange={handleChange}
             />
 
@@ -45,7 +46,7 @@ function TweetForm() {
 
               <button
                 disabled={!tweetPost.tweetMessage}
-                className="tweet-form-btn btn"
+                className="tweet-form-btn"
                 type="submit"
               >
                 Tweet

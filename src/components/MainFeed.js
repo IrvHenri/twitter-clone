@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/mainfeed.css";
 import TweetForm from "./TweetForm";
 
 function MainFeed() {

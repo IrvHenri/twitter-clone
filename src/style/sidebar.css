@@ -1,0 +1,84 @@
+/*------------
+---------------
+   Side-Bar
+--------------
+------------ */
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.twitter-icon:hover {
+  background: var(--accent-border);
+  border-radius: 25px;
+}
+
+.twitter-logo {
+  padding-left: 1em;
+  margin-bottom: 15px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 0.2em 0.8em;
+  margin-bottom: 0.9em;
+  font-size: var(--fontsize-large);
+  font-weight: var(--font-weight-bold);
+  width: fit-content;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+.sidebar-link:hover *,
+.sidebar-link:hover {
+  background: var(--hover-highlight-background);
+  color: #188ad1;
+}
+
+.side-bar-btn {
+  background: #1da1f3;
+  padding: 0.8em 1em;
+  border: none;
+  border-radius: 25px;
+  width: 230px;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.1em;
+  transition: 0.2s;
+  margin-left: 0.5em;
+}
+.side-bar-btn:hover {
+  background: #188ad1;
+}
+.profile-widget-btn {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-top: auto;
+  align-self: flex-start;
+  border: none;
+  padding: 0.8em;
+  border-radius: 25px;
+  text-decoration: none;
+  background: transparent;
+}
+.profile-widget-btn * {
+  background: transparent;
+}
+
+.profile-widget-btn > * {
+  font-size: 1rem;
+}
+.profile-widget-btn p:first-of-type {
+  font-weight: var(--font-weight-bold);
+}
+
+.profile-widget-btn:hover {
+  background: var(--hover-highlight-background);
+}
+
+.user-handle {
+  display: flex;
+}

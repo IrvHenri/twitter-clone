@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/tweetPost.css";
 import Avatar from "@material-ui/core/Avatar";
 import TweetImg from "./TweetImg";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";

@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import "../style/modal.css";
 import { ModalContext } from "../ModalContext";
 import { FormContext } from "../FormContext";
 import CloseIcon from "@material-ui/icons/Close";
@@ -57,7 +58,6 @@ const Modal = (props) => {
                 name="tweetMessage"
                 autoComplete="off"
                 value={tweetModalPost.tweetMessage}
-                required
                 onChange={handleModalChange}
               />
               <input

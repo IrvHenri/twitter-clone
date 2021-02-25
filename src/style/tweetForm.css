@@ -1,0 +1,90 @@
+/*------------
+---------------
+   Tweet-Form
+--------------
+------------ */
+
+.tweet-form-container {
+  width: 100%;
+  border-top: 1px solid #37444e;
+}
+
+.tweet-form-container::after {
+  content: "";
+  display: block;
+  border-bottom: 7px solid #182734;
+}
+
+.home-link {
+  display: block;
+  font-size: var(--fontsize-large);
+  font-weight: var(--font-weight-bold);
+  padding: 0.5em;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--accent-border);
+  text-align: left;
+}
+
+.form-avatar {
+  margin: 0.5em;
+}
+
+.form-content {
+  display: flex;
+  padding: 0.5em;
+  border-bottom: 1px solid #37444e;
+}
+form {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.tweet-form-container input {
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-size: var(--fontsize-large);
+  font-weight: 400;
+}
+
+.tweet-form-toolbar {
+  display: flex;
+  padding-top: 1.5em;
+}
+
+.tweet-form-btn {
+  margin-left: auto;
+  margin-right: 0.5em;
+  background: #1da1f3;
+  padding: 0.5em 0.8em;
+  border: none;
+  border-radius: 25px;
+  width: fit-content;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.1em;
+  transition: 0.2s;
+}
+.tweet-form-btn:hover {
+  background: #188ad1;
+}
+
+.tweet-form-btn:disabled {
+  color: #898f95;
+  background: #1a608e;
+}
+
+/*------------
+---------------
+   Tweet-Feed
+--------------
+------------ */
+.tweet-feed {
+  overflow-y: auto;
+  max-height: 100vh;
+  border-top: 1px solid #37444e;
+}
+
+.tweet-feed::-webkit-scrollbar {
+  display: none;
+}

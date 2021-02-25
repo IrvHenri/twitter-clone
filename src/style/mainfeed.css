@@ -1,0 +1,12 @@
+/*------------
+---------------
+   Main-Feed
+--------------
+------------ */
+
+.main-feed {
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  border: 1px solid var(--accent-border);
+}

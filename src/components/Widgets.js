@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/widgets.css";
 import { TwitterTimelineEmbed, TwitterTweetEmbed } from "react-twitter-embed";
 import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 

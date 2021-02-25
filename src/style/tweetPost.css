@@ -1,0 +1,66 @@
+/*------------
+---------------
+   Tweet-Post
+--------------
+------------ */
+.tweet-post-container {
+  display: flex;
+  min-height: fit-content;
+  padding: 0.8em;
+  border-top: 1px solid var(--accent-border);
+  border-bottom: 1px solid var(--accent-border);
+}
+
+.tweet-post-container .tweet-post-title p {
+  font-weight: var(--font-weight-bold);
+}
+
+.tweet-avatar {
+  margin: 0.5em;
+}
+
+.tweet-post-title {
+  display: flex;
+  padding: 0.3em 0;
+}
+.tweet-post-handle {
+  font-weight: lighter;
+  color: #7f8f9b;
+  margin-left: 0.3em;
+}
+
+.tweet-verified-badge {
+  font-size: 14px !important;
+  margin-left: 0.2em;
+}
+
+.tweet-img-container {
+  display: flex;
+  width: 100%;
+  border: 2x solid yellow;
+}
+
+.tweet-message {
+  padding: 0.7em 0;
+}
+
+.tweet-img {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  background-size: cover;
+  border-radius: 25px;
+  border: 1px solid rgb(95, 95, 95);
+  margin: 0.7em 0;
+}
+
+.tweet-post-content {
+  width: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.tweet-post-toolbar > * {
+  display: flex;
+  margin-right: 4.3em;
+}

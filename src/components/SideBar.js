@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import "../style/sidebar.css"
 import { ModalContext } from "../ModalContext";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import HomeIcon from "@material-ui/icons/Home";
