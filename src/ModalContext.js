@@ -5,12 +5,12 @@ const ModalContext = React.createContext();
 function ModalContextProvider(props) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  function openModal() {
+  function toggleModal() {
     setIsModalOpen((prevState) => !prevState);
   }
   return (
     <div>
-      <ModalContext.Provider value={{ isModalOpen, openModal }}>
+      <ModalContext.Provider value={{ isModalOpen, toggleModal }}>
         {props.children}
       </ModalContext.Provider>
     </div>

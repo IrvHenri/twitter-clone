@@ -8,7 +8,7 @@ import RepeatOutlinedIcon from "@material-ui/icons/RepeatOutlined";
 import FavoriteBorderOutlinedIcon from "@material-ui/icons/FavoriteBorderOutlined";
 import PublishOutlinedIcon from "@material-ui/icons/PublishOutlined";
 
-function TweetPost({ tweet }) {
+function TweetPost({ tweetMessage, imageUrl }) {
   return (
     <div className="tweet-post-container">
       <Avatar
@@ -24,8 +24,8 @@ function TweetPost({ tweet }) {
           </p>
           <span className="tweet-post-handle">@username</span>
         </div>
-        <p className="tweet-message">{tweet.tweetMessage}</p>
-        {tweet.imageUrl ? <TweetImg imageUrl={tweet.imageUrl} /> : null}
+        <p className="tweet-message">{tweetMessage}</p>
+        {imageUrl ? <TweetImg imageUrl={imageUrl} /> : null}
 
         <div className="tweet-post-toolbar">
           <ChatBubbleOutlineOutlinedIcon />

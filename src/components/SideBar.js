@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "../style/sidebar.css"
+import "../style/sidebar.css";
 import { ModalContext } from "../ModalContext";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import HomeIcon from "@material-ui/icons/Home";
@@ -14,7 +14,7 @@ import Avatar from "@material-ui/core/Avatar";
 import LockIcon from "@material-ui/icons/Lock";
 
 function SideBar(props) {
-  const { openModal } = useContext(ModalContext);
+  const { toggleModal } = useContext(ModalContext);
   let iconStyling = {
     marginRight: ".5em ",
     fontSize: "2rem",
@@ -61,7 +61,7 @@ function SideBar(props) {
         <MoreHorizIcon style={iconStyling} />
         More
       </button>
-      <button onClick={openModal} className="side-bar-btn btn">
+      <button onClick={toggleModal} className="side-bar-btn btn">
         Tweet
       </button>
 

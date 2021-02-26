@@ -1,7 +1,8 @@
-import React, { useState, useContext } from "react";
 import "../style/modal.css";
+import db from "../firebase";
+import React, { useState, useContext } from "react";
+
 import { ModalContext } from "../ModalContext";
-import { FormContext } from "../FormContext";
 import CloseIcon from "@material-ui/icons/Close";
 import Avatar from "@material-ui/core/Avatar";
 
@@ -11,9 +12,7 @@ const Modal = (props) => {
     imageUrl: "",
   });
 
-  const { isModalOpen, openModal } = useContext(ModalContext);
-
-  const { setTweets } = useContext(FormContext);
+  const { isModalOpen, toggleModal } = useContext(ModalContext);
 
   //Functions
   function handleModalChange(event) {
@@ -24,22 +23,33 @@ const Modal = (props) => {
     }));
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-
-    setTweets((prevModalTweets) => [...prevModalTweets, tweetModalPost]);
+  function closeModal() {
+    toggleModal();
     setTweetModalPost({
       tweetMessage: "",
       imageUrl: "",
     });
-    openModal();
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    db.collection("posts").add({
+      tweetMessage: tweetModalPost.tweetMessage,
+      imageUrl: tweetModalPost.imageUrl,
+    });
+    setTweetModalPost({
+      tweetMessage: "",
+      imageUrl: "",
+    });
+    toggleModal();
   }
 
   return (
     <div className={`modal ${isModalOpen ? "open-modal" : ""}`}>
       <div className="modal-content">
         <div className="modal-header">
-          <span onClick={openModal} className="modal-close-button">
+          <span onClick={closeModal} className="modal-close-button">
             <CloseIcon fontSize="medium" className="close-icon" />
           </span>
         </div>

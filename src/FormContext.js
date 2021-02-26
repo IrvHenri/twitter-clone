@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import db from "./firebase";
 const FormContext = React.createContext();
 
 function FormContextProvider(props) {
@@ -17,12 +17,14 @@ function FormContextProvider(props) {
   function handleSubmit(event) {
     event.preventDefault();
 
-    setTweets((prevTweets) => [...prevTweets, tweetPost]);
+    db.collection("posts").add({
+      tweetMessage: tweetPost.tweetMessage,
+      imageUrl: tweetPost.imageUrl,
+    });
     setTweetPost({
       tweetMessage: "",
       imageUrl: "",
     });
-    console.log(tweets);
   }
   return (
     <div>

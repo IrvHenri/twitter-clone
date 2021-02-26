@@ -1,18 +1,10 @@
 import "../style/tweetForm.css";
 import React, { useContext } from "react";
-
 import { FormContext } from "../FormContext";
 import Avatar from "@material-ui/core/Avatar";
-import TweetPost from "./TweetPost";
 
 function TweetForm() {
-  const { tweets, handleSubmit, handleChange, tweetPost } = useContext(
-    FormContext
-  );
-
-  const tweetFeed = tweets.map((tweet, index) => (
-    <TweetPost key={index} tweet={tweet} />
-  ));
+  const { handleSubmit, handleChange, tweetPost } = useContext(FormContext);
 
   return (
     <div>
@@ -55,7 +47,6 @@ function TweetForm() {
           </form>
         </div>
       </div>
-      <div className="tweet-feed">{tweetFeed}</div>
     </div>
   );
 }

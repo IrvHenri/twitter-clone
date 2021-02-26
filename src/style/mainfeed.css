@@ -7,6 +7,6 @@
 .main-feed {
   display: flex;
   flex-direction: column;
-  width: 620px;
+  width: 600px;
   border: 1px solid var(--accent-border);
 }
