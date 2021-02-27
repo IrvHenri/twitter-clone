@@ -25,19 +25,22 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--twitter-background);
-  width: 40%;
+  width: 600px;
+  border-radius: 25px;
 }
 
 .open-modal {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.2s 0s, transform 0.2s;
+  transition: visibility 0s linear 0s, opacity 0.2s 0s, transform 0.1s;
 }
 
 .modal-header {
   padding: 1em;
   border-bottom: 1px solid var(--accent-border);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .close-icon * {
@@ -52,6 +55,8 @@
   align-items: center;
   padding: 1em;
   padding-bottom: 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .modal-avatar {

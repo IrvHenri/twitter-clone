@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import db from "./firebase";
+import { db, fTimeStamp } from "./firebase";
 const FormContext = React.createContext();
 
 function FormContextProvider(props) {
   const [tweetPost, setTweetPost] = useState({
     tweetMessage: "",
     imageUrl: "",
+    timeStamp: "",
   });
   const [tweets, setTweets] = useState([]);
 
@@ -20,10 +21,12 @@ function FormContextProvider(props) {
     db.collection("posts").add({
       tweetMessage: tweetPost.tweetMessage,
       imageUrl: tweetPost.imageUrl,
+      timeStamp: fTimeStamp,
     });
     setTweetPost({
       tweetMessage: "",
       imageUrl: "",
+      timeStamp: "",
     });
   }
   return (

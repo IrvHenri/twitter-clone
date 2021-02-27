@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import db from "../firebase";
+import { db } from "../firebase";
 import "../style/mainfeed.css";
 import { FormContext } from "../FormContext";
 import TweetForm from "./TweetForm";

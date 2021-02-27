@@ -1,5 +1,5 @@
 import "../style/modal.css";
-import db from "../firebase";
+import { db, fTimeStamp } from "../firebase";
 import React, { useState, useContext } from "react";
 
 import { ModalContext } from "../ModalContext";
@@ -10,6 +10,7 @@ const Modal = (props) => {
   const [tweetModalPost, setTweetModalPost] = useState({
     tweetMessage: "",
     imageUrl: "",
+    timeStamp: "",
   });
 
   const { isModalOpen, toggleModal } = useContext(ModalContext);
@@ -28,6 +29,7 @@ const Modal = (props) => {
     setTweetModalPost({
       tweetMessage: "",
       imageUrl: "",
+      timeStamp: "",
     });
   }
 
@@ -37,10 +39,12 @@ const Modal = (props) => {
     db.collection("posts").add({
       tweetMessage: tweetModalPost.tweetMessage,
       imageUrl: tweetModalPost.imageUrl,
+      timeStamp: fTimeStamp,
     });
     setTweetModalPost({
       tweetMessage: "",
       imageUrl: "",
+      timeStamp: "",
     });
     toggleModal();
   }
@@ -50,7 +54,7 @@ const Modal = (props) => {
       <div className="modal-content">
         <div className="modal-header">
           <span onClick={closeModal} className="modal-close-button">
-            <CloseIcon fontSize="medium" className="close-icon" />
+            <CloseIcon className="close-icon" />
           </span>
         </div>
         <div className="modal-body">
