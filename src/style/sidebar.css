@@ -57,6 +57,7 @@
   flex-direction: row;
   width: 90%;
   margin-top: auto;
+  margin-bottom: 0.5em;
   align-self: flex-start;
   border: none;
   padding: 0.8em;

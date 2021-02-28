@@ -12,7 +12,7 @@ function MainFeed() {
     db.collection("posts").onSnapshot((snapshot) =>
       setTweets(snapshot.docs.map((doc) => doc.data()))
     );
-  }, []);
+  }, [setTweets]);
 
   const tweetFeed = tweets.map((tweet, index) => (
     <TweetPost
