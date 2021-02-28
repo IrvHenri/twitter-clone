@@ -6,6 +6,8 @@ A Twitter clone application that allows users to submit posts with a message and
 See live demo here:
 https://irvhenri.github.io/Book-Finder-App/
 
+![tweet-clone-app](https://user-images.githubusercontent.com/69181038/109406048-efed2d00-7943-11eb-932a-928f32cfb8bc.PNG)
+
 
 
 ## Motivation
