@@ -1,3 +1,52 @@
+# Twitter Clone App
+
+A Twitter clone application that allows users to submit posts with a message and an image (optional).
+
+## Demo
+See live demo here: https://twitter-clone-2dfa5.web.app
+
+
+
+<img width="604" alt="twitter-clone" src="https://user-images.githubusercontent.com/69181038/109406048-efed2d00-7943-11eb-932a-928f32cfb8bc.PNG">
+
+
+
+## Motivation
+ I wanted to apply my knowledge of React hooks to manage state within an app. The useState, useContext and useEffect hooks allowed me to seamlessly manage state which came in handy when I needed to share state between sibling components.   
+ 
+
+## Tech Stack
+- CSS
+- ReactJs
+- Cloud Firestore
+- Material Ui
+- NPM Twitter Embed
+
+## Known Issues
+
+- Post submissions are displayed out of order. I am working to find a solution within Cloud Firestore's documentation 
+
+## Features to be added
+
+- pagination
+- Loading "progress" circle while user types in characters
+
+## License
+MIT © [Irving Henriquez](https://github.com/IrvHenri)
+
+
+
+
+
+
+### React README
+
+
+
+<details> 
+
+<summary> Click to Expand </summary>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +117,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+</details>
+
+
