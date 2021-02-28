@@ -1,31 +1,35 @@
 # Twitter Clone App
 
-A Twitter clone application that allows users to submit posts with a message and an image (optional). React hooks are implemented to manage state and Cloud Firestore was used for backend storage. Additional features: modal overlay with another message submission form. 
+A Twitter clone application that allows users to submit posts with a message and an image (optional).
 
 ## Demo
 See live demo here:
 https://irvhenri.github.io/Book-Finder-App/
 
-![tweet-clone-app](https://user-images.githubusercontent.com/69181038/109406048-efed2d00-7943-11eb-932a-928f32cfb8bc.PNG)
+
+<img width="604" alt="twitter-clone" src="https://user-images.githubusercontent.com/69181038/109406048-efed2d00-7943-11eb-932a-928f32cfb8bc.PNG">
 
 
 
 ## Motivation
-
-I built it to strengthen my understanding of fetching API data and rendering that data within a single page app.
+ I wanted to apply my knowledge of React hooks to manage state within an app. The useState, useContext and useEffect hooks allowed me to seamlessly manage state which came in handy when I needed to share state between sibling components.   
+ 
 
 ## Tech Stack
-- HTML
 - CSS
-- JavaScript
 - ReactJs
-- -Cloud Firestore
+- Cloud Firestore
 - Material Ui
 - NPM Twitter Embed
 
 ## Known Issues
-- The post feed is currently out of order. I am working to find a solution from the browser side. 
 
+- Post submissions are displayed out of order. I am working to find a solution within Cloud Firestores documentation 
+- 
+## Features to be added
+
+- pagination
+- Loading "progress" circle while user types in characters
 
 ## License
 MIT © [Irving Henriquez](https://github.com/IrvHenri)
