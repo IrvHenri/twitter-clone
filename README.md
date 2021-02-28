@@ -24,13 +24,14 @@ See live demo here: https://twitter-clone-2dfa5.web.app (min-width 1200px)
 - Material Ui
 - NPM Twitter Embed
 
-## Known Issues
+## Known Issues/ App limitations
 
+- Current features include: Submitting posts through main form and the modal form.
 - Post submissions are displayed out of order. I am working to find a solution within Cloud Firestore's documentation 
 
 ## Features to be added
 
-- pagination
+- same page pagination within main feed section
 - Loading "progress" circle while user types in characters
 
 ## License
