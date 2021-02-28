@@ -4,7 +4,7 @@ A Twitter clone application that allows users to submit posts with a message and
 
 ## Demo
 See live demo here:
-https://irvhenri.github.io/Book-Finder-App/
+
 
 
 <img width="604" alt="twitter-clone" src="https://user-images.githubusercontent.com/69181038/109406048-efed2d00-7943-11eb-932a-928f32cfb8bc.PNG">
@@ -25,7 +25,7 @@ https://irvhenri.github.io/Book-Finder-App/
 ## Known Issues
 
 - Post submissions are displayed out of order. I am working to find a solution within Cloud Firestores documentation 
-- 
+
 ## Features to be added
 
 - pagination
