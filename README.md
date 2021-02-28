@@ -14,7 +14,7 @@ See live demo here: https://twitter-clone-2dfa5.web.app
 <img width="604" alt="twitter-clone" src="https://user-images.githubusercontent.com/69181038/109430330-c7f6db80-79ce-11eb-9233-f33cb1360c37.PNG">
 
 ## Motivation
- I wanted to apply my knowledge of React hooks to manage state within an app. The useState, useContext and useEffect hooks allowed me to seamlessly manage state which came in handy when I needed to share state between sibling components.   
+ I wanted to apply my knowledge of React hooks to manage state within an app. The useState, useContext and useEffect hooks allowed me to seamlessly manage state which came in handy when I needed to share state between sibling components (modal and main form components).   
  
 
 ## Tech Stack
