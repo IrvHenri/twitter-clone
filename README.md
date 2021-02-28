@@ -1,3 +1,37 @@
+# Twitter Clone App
+
+A Twitter clone application that allows users to submit posts with a message and an image (optional). React hooks are implemented to manage state and Cloud Firestore was used for backend storage. Additional features: modal overlay with another message submission form. 
+
+## Demo
+See live demo here:
+https://irvhenri.github.io/Book-Finder-App/
+
+
+
+## Motivation
+
+I built it to strengthen my understanding of fetching API data and rendering that data within a single page app.
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- ReactJs
+- -Cloud Firestore
+- Material Ui
+- NPM Twitter Embed
+
+## Known Issues
+- The post feed is currently out of order. I am working to find a solution from the browser side. 
+
+
+## License
+MIT © [Irving Henriquez](https://github.com/IrvHenri)
+
+
+
+
+
 
 ### React README
 
