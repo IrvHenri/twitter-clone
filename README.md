@@ -24,7 +24,7 @@ See live demo here: https://twitter-clone-2dfa5.web.app
 
 ## Known Issues
 
-- Post submissions are displayed out of order. I am working to find a solution within Cloud Firestores documentation 
+- Post submissions are displayed out of order. I am working to find a solution within Cloud Firestore's documentation 
 
 ## Features to be added
 
