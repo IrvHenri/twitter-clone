@@ -6,10 +6,10 @@ A Twitter clone application that allows users to submit posts (images are option
 See live demo here: https://twitter-clone-2dfa5.web.app (min-width 1200px)
 
 
-### Screenshot - Main Form
+### Preview - Main Form
 <img width="604" alt="twitter-clone" src="https://user-images.githubusercontent.com/69181038/109406048-efed2d00-7943-11eb-932a-928f32cfb8bc.PNG">
 
-### Screenshot - Modal Form
+### Preview - Modal Form
 
 <img width="604" alt="twitter-clone" src="https://user-images.githubusercontent.com/69181038/109430330-c7f6db80-79ce-11eb-9233-f33cb1360c37.PNG">
 
