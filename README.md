@@ -1,18 +1,20 @@
 # Twitter Clone App
 
-A Twitter clone application that allows users to submit posts with a message and an image (optional).
+A Twitter clone application that allows users to submit posts (images are optional).
 
 ## Demo
-See live demo here: https://twitter-clone-2dfa5.web.app
+See live demo here: https://twitter-clone-2dfa5.web.app (min-width 1200px)
 
 
-
+### Preview - Main Form
 <img width="604" alt="twitter-clone" src="https://user-images.githubusercontent.com/69181038/109406048-efed2d00-7943-11eb-932a-928f32cfb8bc.PNG">
 
+### Preview - Modal Form
 
+<img width="604" alt="twitter-clone" src="https://user-images.githubusercontent.com/69181038/109430330-c7f6db80-79ce-11eb-9233-f33cb1360c37.PNG">
 
 ## Motivation
- I wanted to apply my knowledge of React hooks to manage state within an app. The useState, useContext and useEffect hooks allowed me to seamlessly manage state which came in handy when I needed to share state between sibling components.   
+ I wanted to apply my knowledge of React hooks to manage state within an app. The useState, useContext and useEffect hooks allowed me to seamlessly manage state which came in handy when I needed to share state between sibling components (modal and main form components).   
  
 
 ## Tech Stack
@@ -22,13 +24,14 @@ See live demo here: https://twitter-clone-2dfa5.web.app
 - Material Ui
 - NPM Twitter Embed
 
-## Known Issues
+## Known Issues/ App limitations
 
+- Current features include: Submitting posts through main form and the modal form.
 - Post submissions are displayed out of order. I am working to find a solution within Cloud Firestore's documentation 
 
 ## Features to be added
 
-- pagination
+- same page pagination within main feed section
 - Loading "progress" circle while user types in characters
 
 ## License
