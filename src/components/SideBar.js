@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import "../style/sidebar.css";
 import { ModalContext } from "../ModalContext";
 import TwitterIcon from "@material-ui/icons/Twitter";
@@ -30,37 +31,37 @@ function SideBar(props) {
         />
       </div>
 
-      <button className="sidebar-link">
+      <Link className="sidebar-link" to="/">
         <HomeIcon style={iconStyling} /> Home
-      </button>
-      <button className="sidebar-link">
+      </Link>
+      <Link className="sidebar-link" to="/explore">
         <SearchOutlinedIcon style={iconStyling} />
         Explore
-      </button>
-      <button className="sidebar-link">
+      </Link>
+      <Link className="sidebar-link" to="/notifications">
         <NotificationsNoneIcon style={iconStyling} />
         Notifications
-      </button>
-      <button className="sidebar-link">
+      </Link>
+      <Link className="sidebar-link" to="/messages">
         <MailOutlineIcon style={iconStyling} />
         Messages
-      </button>
-      <button className="sidebar-link">
+      </Link>
+      <Link className="sidebar-link" to="/bookmarks">
         <BookmarkBorderIcon style={iconStyling} />
         Bookmarks
-      </button>
-      <button className="sidebar-link">
+      </Link>
+      <Link className="sidebar-link" to="/lists">
         <ListAltIcon style={iconStyling} />
         Lists
-      </button>
-      <button className="sidebar-link">
+      </Link>
+      <Link className="sidebar-link" to="/profile">
         <PersonOutlineIcon style={iconStyling} />
         Profile
-      </button>
-      <button className="sidebar-link">
+      </Link>
+      <Link className="sidebar-link" to="/more">
         <MoreHorizIcon style={iconStyling} />
         More
-      </button>
+      </Link>
       <button onClick={toggleModal} className="side-bar-btn btn">
         Tweet
       </button>

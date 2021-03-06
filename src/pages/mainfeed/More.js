@@ -1,6 +1,6 @@
 import React from "react";
 
-const Bookmarks = () => {
+const More = () => {
   return (
     <main className="main-feed">
       <h1>COMING SOON</h1>
@@ -8,4 +8,4 @@ const Bookmarks = () => {
   );
 };
 
-export default Bookmarks;
+export default More;
