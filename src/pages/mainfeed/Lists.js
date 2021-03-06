@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Lists = () => {
   return (
-    <div>
+    <main className="main-feed">
       <h1>COMING SOON</h1>
-    </div>
-  )
-}
+    </main>
+  );
+};
 
-export default Lists
+export default Lists;

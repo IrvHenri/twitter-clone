@@ -31,6 +31,7 @@
   border-radius: 25px;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 .sidebar-link:hover *,
 .sidebar-link:hover {

@@ -10,3 +10,17 @@
   width: 600px;
   border: 1px solid var(--accent-border);
 }
+
+/*------------
+---------------
+   Explore-Feed
+--------------
+------------ */
+
+.explore-tools {
+  display: flex;
+}
+
+.explore-gear {
+  background: blue;
+}

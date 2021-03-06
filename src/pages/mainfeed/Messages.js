@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Messages = () => {
   return (
-    <div>
+    <main className="main-feed">
       <h1>COMING SOON</h1>
-    </div>
-  )
-}
+    </main>
+  );
+};
 
-export default Messages
+export default Messages;

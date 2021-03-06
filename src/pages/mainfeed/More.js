@@ -2,9 +2,9 @@ import React from "react";
 
 const More = () => {
   return (
-    <div>
+    <main className="main-feed">
       <h1>COMING SOON</h1>
-    </div>
+    </main>
   );
 };
 

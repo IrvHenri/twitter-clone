@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Bookmarks = () => {
   return (
-    <div>
+    <main className="main-feed">
       <h1>COMING SOON</h1>
-    </div>
-  )
-}
+    </main>
+  );
+};
 
-export default Bookmarks
+export default Bookmarks;
