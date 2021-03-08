@@ -1,6 +1,8 @@
 # Twitter Clone App
 
-A Twitter clone application that allows users to submit posts (images are optional).
+A Twitter clone application that allows users to submit posts (images are optional). 
+
+*Recently added feature: react router pagination. The side bar pages are under construction!
 
 ## Demo
 See live demo here: https://twitter-clone-2dfa5.web.app (min-width 1200px)
@@ -20,6 +22,7 @@ See live demo here: https://twitter-clone-2dfa5.web.app (min-width 1200px)
 ## Tech Stack
 - CSS
 - ReactJs
+- React Router
 - Cloud Firestore
 - Material Ui
 - NPM Twitter Embed
@@ -31,7 +34,6 @@ See live demo here: https://twitter-clone-2dfa5.web.app (min-width 1200px)
 
 ## Features to be added
 
-- same page pagination within main feed section
 - Loading "progress" circle while user types in characters
 
 ## License
