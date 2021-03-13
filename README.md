@@ -2,7 +2,7 @@
 
 A Twitter clone application that allows users to submit posts (images are optional). 
 
-*Recently added feature: react router pagination. The side bar pages are under construction!
+*Recently added: react router pages. The side bar pages are under construction!
 
 ## Demo
 See live demo here: https://twitter-clone-2dfa5.web.app (min-width 1200px)
