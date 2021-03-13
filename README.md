@@ -23,7 +23,7 @@ See live demo here: https://twitter-clone-2dfa5.web.app (min-width 1200px)
 - CSS
 - ReactJs
 - React Router
-- Cloud Firestore
+- Cloud Firestore Database
 - Material Ui
 - NPM Twitter Embed
 
