@@ -1,6 +1,6 @@
 # Twitter Clone App
 
-A Twitter clone application that allows users to submit posts (images are optional). 
+A Twitter clone application that allows users to submit posts and navigate through subpages with react router. 
 
 *Recently added: react router pages. The side bar pages are under construction!
 
