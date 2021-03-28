@@ -1,0 +1,29 @@
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-tabs a {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 0.9em 6em;
+  color: #8394a1;
+  font-weight: 700;
+}
+
+.nav-tabs a:hover {
+  background-color: var(--hover-highlight-background);
+  color: var(--twitter-color);
+}

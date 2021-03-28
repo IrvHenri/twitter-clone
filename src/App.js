@@ -5,14 +5,14 @@ import SideBar from "./components/SideBar";
 import MainFeed from "./components/MainFeed";
 import Widgets from "./components/Widgets";
 import Modal from "./components/Modal";
-import Bookmarks from "./pages/mainfeed/Bookmarks";
-import Explore from "./pages/mainfeed/Explore";
-import Lists from "./pages/mainfeed/Lists";
-import Messages from "./pages/mainfeed/Messages";
-import Notifications from "./pages/mainfeed/Notifications";
-import More from "./pages/mainfeed/More";
-import Profile from "./pages/mainfeed/Profile";
-
+import Bookmarks from "./sidebar-tabs/Bookmarks";
+import Explore from "./sidebar-tabs/Explore";
+import Lists from "./sidebar-tabs/Lists";
+import Messages from "./sidebar-tabs/Messages";
+import Notifications from "./sidebar-tabs/Notifications";
+import More from "./sidebar-tabs/More";
+import Profile from "./sidebar-tabs/Profile";
+import ForYou from "./pages/explore-pages/ForYou";
 function App() {
   return (
     <div className="App">
@@ -25,9 +25,13 @@ function App() {
         <Route exact path="/bookmarks">
           <Bookmarks />
         </Route>
-        <Route exact path="/explore">
+        <Route exact path="/explore/tabs">
           <Explore />
         </Route>
+        <Route path="/explore/tabs/forYou">
+          <ForYou />
+        </Route>
+
         <Route exact path="/lists">
           <Lists />
         </Route>

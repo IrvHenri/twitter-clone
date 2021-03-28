@@ -1,0 +1,40 @@
+.messages-feed {
+  width: 400px;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--accent-border);
+  border-bottom: 1px solid var(--accent-border);
+}
+
+.messages-searchbar {
+  margin: 1em auto;
+  width: 90%;
+}
+
+.messages-searchbar input {
+  width: 100%;
+}
+
+.sample-post {
+  display: flex;
+  width: 100%;
+  padding: 1.2em;
+  border-top: 1px solid var(--accent-border);
+  border-bottom: 1px solid var(--accent-border);
+}
+
+.sample-post:hover {
+  cursor: pointer;
+}
+
+.user-handler {
+  color: #667564;
+}
+
+.user-details {
+  display: flex;
+  align-items: baseline;
+}

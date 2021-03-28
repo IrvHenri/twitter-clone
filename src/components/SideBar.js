@@ -34,7 +34,7 @@ function SideBar(props) {
       <Link className="sidebar-link" to="/">
         <HomeIcon style={iconStyling} /> Home
       </Link>
-      <Link className="sidebar-link" to="/explore">
+      <Link className="sidebar-link" to="/explore/tabs">
         <SearchOutlinedIcon style={iconStyling} />
         Explore
       </Link>

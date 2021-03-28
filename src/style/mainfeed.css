@@ -19,8 +19,32 @@
 
 .explore-tools {
   display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
 .explore-gear {
-  background: blue;
+  display: block;
+  align-self: center;
+  margin-left: 2.9rem;
+}
+
+.for-you-feed {
+  min-width: 100px;
+}
+
+.explore-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.explore-nav a {
+  text-decoration: none;
+  color: #8394a1;
+  padding: 1em 0.5em;
+  margin-top: 0.2em;
+  font-weight: 700;
+}
+.explore-nav a:hover {
+  background-color: var(--hover-highlight-background);
+  color: var(--twitter-color);
 }
