@@ -1,0 +1,25 @@
+.pinned-lists {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  background-color: var(--hover-highlight-background);
+}
+
+.list-square {
+  display: flex;
+  background: #00dfbc;
+  border-radius: 5px;
+  padding: 1em;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}

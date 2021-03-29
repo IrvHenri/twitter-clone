@@ -12,7 +12,10 @@ function FormContextProvider(props) {
 
   function handleChange(event) {
     const { name, value } = event.target;
-    setTweetPost((prevTweetPost) => ({ ...prevTweetPost, [name]: value }));
+    setTweetPost((prevTweetPost) => ({
+      ...prevTweetPost,
+      [name]: value,
+    }));
   }
 
   function handleSubmit(event) {

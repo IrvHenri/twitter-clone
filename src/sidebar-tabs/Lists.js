@@ -7,29 +7,58 @@ const Lists = () => {
       <nav>
         <div className="nav-row">
           <h1>Lists</h1>
-          <PostAddIcon style={{ fontSize: "1.5rem", fill: "#50b7f5" }} />
+          <PostAddIcon style={{ fontSize: "1.5rem", fill: "inherit" }} />
         </div>
       </nav>
+      <h1>Pinned Lists</h1>
       <section className="pinned-lists">
-        <div>
-          <div>
-            <PostAddIcon style={{ fontSize: "1.5rem", fill: "#50b7f5" }} />
+        <div className="list-item">
+          <div className="list-square">
+            <PostAddIcon
+              style={{
+                fontSize: "2.5rem",
+                fill: "#50b7f5",
+                background: "inherit",
+              }}
+            />
           </div>
+          <p>History</p>
         </div>
-        <div>
-          <div>
-            <PostAddIcon style={{ fontSize: "1.5rem", fill: "#50b7f5" }} />
+        <div className="list-item">
+          <div className="list-square">
+            <PostAddIcon
+              style={{
+                fontSize: "2.5rem",
+                fill: "#50b7f5",
+                background: "inherit",
+              }}
+            />
           </div>
+          <p>Science</p>
         </div>
-        <div>
-          <div>
-            <PostAddIcon style={{ fontSize: "1.5rem", fill: "#50b7f5" }} />
+        <div className="list-item">
+          <div className="list-square">
+            <PostAddIcon
+              style={{
+                fontSize: "2.5rem",
+                fill: "#50b7f5",
+                background: "inherit",
+              }}
+            />
           </div>
+          <p>Comedy</p>
         </div>
-        <div>
-          <div>
-            <PostAddIcon style={{ fontSize: "1.5rem", fill: "#50b7f5" }} />
+        <div className="list-item">
+          <div className="list-square">
+            <PostAddIcon
+              style={{
+                fontSize: "2.5rem",
+                fill: "#50b7f5",
+                background: "inherit",
+              }}
+            />
           </div>
+          <p>Arts</p>
         </div>
       </section>
       <section className="discover-lists"></section>

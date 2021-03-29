@@ -64,3 +64,13 @@
   display: flex;
   margin-right: 4.3em;
 }
+
+.post-action-button {
+  font-size: small;
+}
+
+.post-action-button:hover {
+  cursor: pointer;
+  background: var(--accent-border);
+  border-radius: 50%;
+}

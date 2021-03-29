@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/tweetPost.css";
 import Avatar from "@material-ui/core/Avatar";
 import TweetImg from "./TweetImg";
@@ -9,6 +9,8 @@ import FavoriteBorderOutlinedIcon from "@material-ui/icons/FavoriteBorderOutline
 import PublishOutlinedIcon from "@material-ui/icons/PublishOutlined";
 
 function TweetPost({ tweetMessage, imageUrl }) {
+  const [isFavorite, setIsFavorite] = useState(false);
+  const [isRetweet, setIsRetweet] = useState(false);
   return (
     <div className="tweet-post-container">
       <Avatar
@@ -28,10 +30,18 @@ function TweetPost({ tweetMessage, imageUrl }) {
         {imageUrl ? <TweetImg imageUrl={imageUrl} /> : null}
 
         <div className="tweet-post-toolbar">
-          <ChatBubbleOutlineOutlinedIcon />
-          <RepeatOutlinedIcon />
-          <FavoriteBorderOutlinedIcon />
-          <PublishOutlinedIcon />
+          <ChatBubbleOutlineOutlinedIcon className="post-action-button" />
+          <RepeatOutlinedIcon
+            onClick={() => setIsRetweet(!isRetweet)}
+            style={{ fill: `${isRetweet ? "#19BF63" : ""}` }}
+            className="post-action-button"
+          />
+          <FavoriteBorderOutlinedIcon
+            onClick={() => setIsFavorite(!isFavorite)}
+            style={{ fill: `${isFavorite ? "red" : ""}` }}
+            className="post-action-button"
+          />
+          <PublishOutlinedIcon className="post-action-button" p={5} />
         </div>
       </div>
     </div>
