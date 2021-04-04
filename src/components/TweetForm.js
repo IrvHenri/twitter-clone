@@ -28,9 +28,10 @@ function TweetForm() {
 
             <div className="tweet-form-toolbar">
               <input
-                type="text"
+                type="url"
                 name="imageUrl"
                 autoComplete="off"
+                pattern="https://.*"
                 placeholder="Enter image URL"
                 value={tweetPost.imageUrl}
                 onChange={handleChange}

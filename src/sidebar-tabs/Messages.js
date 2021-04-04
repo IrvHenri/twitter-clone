@@ -3,8 +3,8 @@ import SettingsOutlinedIcon from "@material-ui/icons/SettingsOutlined";
 import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import Avatar from "@material-ui/core/Avatar";
-import "../style/messages.css";
 import LockIcon from "@material-ui/icons/Lock";
+import "../style/messages.css";
 
 const Messages = () => {
   return (

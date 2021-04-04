@@ -23,3 +23,28 @@
   justify-content: center;
   margin-bottom: 0.5em;
 }
+
+.discover-lists h1 {
+  border-top: 2px solid var(--accent-border);
+}
+
+.discover-lists h1 {
+  border-bottom: 2px solid var(--accent-border);
+  padding: 1em;
+}
+
+.discover-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.discover-item button {
+  margin-left: auto;
+  padding: 0.3em 1.2em;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--twitter-color);
+  border-radius: 25px;
+  border: 1px solid var(--twitter-color);
+}
