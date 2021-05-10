@@ -4,8 +4,6 @@ A Twitter clone application that allows users to submit posts and navigate throu
 
 *Recently added: react router pages. The side bar pages are under construction!
 
-## Demo
-See live demo here: https://twitter-clone-2dfa5.web.app (min-width 1200px)
 
 
 ### Preview - Main Form
